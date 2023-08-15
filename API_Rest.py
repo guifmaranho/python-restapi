@@ -14,7 +14,7 @@ app = Flask(__name__) # cria o site
 
 @app.route("/") # decorator -> diz em qual link a função vai rodar
 def index(): # função
-    return {"hello": "world"}
+    return "Hello world!"
 
 # @app.route("/") # decorator -> diz em qual link a função vai rodar
 # def fat(): # função
