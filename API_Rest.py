@@ -13,6 +13,10 @@ app = Flask(__name__) # cria o site
 tabela = pd.read_excel("Vendas - Dez.xlsx")
 
 @app.route("/") # decorator -> diz em qual link a função vai rodar
+def hello(): # função
+    return {"teste": "teste_print"}
+
+@app.route("/faturamento") # decorator -> diz em qual link a função vai rodar
 def fat(): # função
     faturamento = float(tabela["Valor Final"].sum())
     return {"faturamento": faturamento}
