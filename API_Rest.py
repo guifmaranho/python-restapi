@@ -38,4 +38,4 @@ def hello(): # função
 #         return {produto: "Inexistente"}
     
 #app.run() # no replit use 
-app.run(host="127.0.0.1:5000") # coloca o site no ar
+app.run(host="127.0.0.1") # coloca o site no ar
