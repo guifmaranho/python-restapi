@@ -13,7 +13,7 @@ app = Flask(__name__) # cria o site
 # tabela = pd.read_excel("Vendas - Dez.xlsx")
 
 @app.route("/") # decorator -> diz em qual link a função vai rodar
-def hello(): # função
+def index(): # função
     return {"hello": "world"}
 
 # @app.route("/") # decorator -> diz em qual link a função vai rodar
