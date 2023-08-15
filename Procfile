@@ -1,2 +1,1 @@
-worker: python API_Rest.py
-web: gunicorn app:API_Rest
+web: gunicorn API_Rest:app --log-file=-
