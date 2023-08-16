@@ -12,6 +12,8 @@ from flask import Flask
 import pandas as pd
 
 app = Flask(__name__) # cria o site
+if __name__ == '__main__':
+    app.run_server(debug=True, use_reloader=False )
 # tabela = pd.read_excel("Vendas - Dez.xlsx")
 
 @app.route("/") # decorator -> diz em qual link a função vai rodar
