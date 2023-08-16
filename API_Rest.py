@@ -1,4 +1,6 @@
 import requests
+import os
+from pml import app
 
 link = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
 # worker: python API_Rest.py
@@ -38,4 +40,6 @@ def index(): # função
 #         return {produto: "Inexistente"}
     
 #app.run() # no replit use 
-app.run(host="127.0.0.1") # coloca o site no ar
+# app.run(host="127.0.0.1") # coloca o site no ar
+port = int(os.environ.get('PORT', 5000)) 
+app.run(host='0.0.0.0', port=port)

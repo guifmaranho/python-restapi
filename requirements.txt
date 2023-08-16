@@ -40,6 +40,7 @@ PySocks==1.7.1
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 PyYAML==6.0.1
+pml==1.21
 regex==2023.6.3
 requests==2.31.0
 requests-file==1.5.1
