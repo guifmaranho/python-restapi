@@ -43,4 +43,4 @@ def index(): # função
     
 # app.run() # no replit use 
 # app.run(host="127.0.0.1") # coloca o site no ar
-app.run(host='0.0.0.0')
+app.run(debug=True)
