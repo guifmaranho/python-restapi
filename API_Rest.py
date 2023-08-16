@@ -1,7 +1,7 @@
 import requests
 
 link = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
-
+# worker: python API_Rest.py
 requisicao = requests.get(link)
 
 print(requisicao.json())
